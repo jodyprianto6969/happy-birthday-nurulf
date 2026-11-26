@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Selamat Ulang Tahun Nurul — 26 November 2026</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.85 Georgia,serif;background:#fff7f8;color:#603845;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;background:
+radial-gradient(circle at 15% 15%,rgba(255,205,220,.9),transparent 30%),
+radial-gradient(circle at 85% 80%,rgba(249,220,194,.85),transparent 32%),
+linear-gradient(180deg,#fff7f8,#fffbf6);z-index:-2}
+.hero{min-height:100svh;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(69,28,49,.95),rgba(164,86,109,.85));color:#fff8f0;text-align:center}
+.hero-inner{max-width:920px;position:relative;z-index:2}
+.small{font:12px/1.6 system-ui;letter-spacing:4px;text-transform:uppercase;opacity:.92}
+.hero h1{font-weight:400;font-size:clamp(52px,11vw,110px);margin:16px 0 10px;line-height:1}
+.number{font-size:clamp(54px,9vw,80px);line-height:1;color:#ffd8b6;margin-top:18px}
+.hero p{max-width:680px;margin:18px auto 24px}
+.btn,button{cursor:pointer;border:1px solid #c48e99;border-radius:999px;padding:12px 22px;background:#fff5ee;color:#7b4154;font:600 14px system-ui;display:inline-block;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.btn.primary{background:#ffd8c1;border:none}
+.heart{position:absolute;color:#ffd5df;opacity:.22;animation:float 13s linear infinite;pointer-events:none;user-select:none}
+@keyframes float{from{transform:translateY(110vh) rotate(0deg)}to{transform:translateY(-15vh) rotate(35deg)}}
+main{max-width:1100px;margin:auto;padding:56px 20px 80px}
+.section{margin-bottom:56px}
+.center{text-align:center}
+h2{font-weight:400;font-size:clamp(32px,5vw,44px);line-height:1.2;color:#954c61;margin:8px 0 16px}
+.lead{max-width:760px;margin:0 auto 18px;text-align:center;color:#7e5660}
+.memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.memory-card{background:#fff;padding:10px;border-radius:22px;box-shadow:0 18px 45px rgba(128,67,86,.15);overflow:hidden;transform:translateY(0);transition:transform .25s ease, box-shadow .25s ease}
+.memory-card:hover{transform:translateY(-4px);box-shadow:0 24px 52px rgba(128,67,86,.2)}
+.memory-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:15px}
+.memory-card figcaption{padding:13px 8px 6px;text-align:center}
+.badge{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:999px;background:linear-gradient(135deg,#e27a96,#b24f6c);color:#fff;font:700 14px/1 system-ui;margin-bottom:8px;box-shadow:0 6px 18px rgba(178,79,108,.28)}
+.caption-title{font:700 18px/1.25 system-ui;color:#8a4760}
+.caption-sub{font:13px/1.5 system-ui;color:#9c7480;margin-top:2px}
+.calendar-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;background:rgba(255,255,255,.72);backdrop-filter:blur(8px);padding:24px;border-radius:28px;box-shadow:0 16px 40px rgba(111,58,75,.12);border:1px solid #f0d7dd}
+.calendar-note{color:#7b5762}
+.calendar-note p{margin:.5em 0}
+.calendar-card{width:min(100%,420px);margin:auto;background:#fff;border-radius:24px;box-shadow:0 24px 60px rgba(86,37,53,.18);overflow:hidden;border:1px solid #f1d7df;animation:cardBob 3.8s ease-in-out infinite}
+@keyframes cardBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.cal-head{background:linear-gradient(135deg,#d95b7c,#8f4667);color:white;text-align:center;padding:16px 18px}
+.cal-head .month{font:700 22px/1.2 system-ui;letter-spacing:1px}
+.cal-head .year{font:12px/1.6 system-ui;letter-spacing:4px;text-transform:uppercase;opacity:.95}
+.cal-grid{padding:18px 16px 22px;background:linear-gradient(180deg,#fff,#fff9fb)}
+.dow,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.dow div{font:700 12px/1.2 system-ui;color:#b46e83;text-align:center;padding:4px 0}
+.day{position:relative;aspect-ratio:1/1;display:grid;place-items:center;font:600 17px/1 system-ui;color:#7e5561;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px #f5e3e8}
+.day.blank{background:transparent;box-shadow:none}
+.day.special{background:linear-gradient(180deg,#fff5f7,#fff);color:#9b3d5d;font-weight:800;transform:scale(1.03);box-shadow:0 12px 30px rgba(221,93,126,.18), inset 0 0 0 1px #f4bfd0;animation:specialPop 2.1s ease-in-out infinite}
+@keyframes specialPop{0%,100%{transform:scale(1.03)}50%{transform:scale(1.12)}}
+.day.special::before,.day.special::after{content:'';position:absolute;inset:-10px;border-radius:999px;border:3px solid rgba(221,93,126,.95);animation:ring 2.1s ease-out infinite}
+.day.special::after{inset:-18px;border-color:rgba(241,177,197,.9);animation-delay:.55s}
+@keyframes ring{0%{transform:scale(.74);opacity:0}25%{opacity:1}100%{transform:scale(1.08);opacity:0}}
+.day .sparkle{position:absolute;font-size:14px;color:#e48aa5;animation:twinkle 1.8s ease-in-out infinite alternate}
+.day .s1{top:-6px;left:4px;animation-delay:.1s}
+.day .s2{top:6px;right:-4px;animation-delay:.6s}
+.day .s3{bottom:-4px;left:50%;transform:translateX(-50%);animation-delay:1s}
+@keyframes twinkle{from{opacity:.35;transform:scale(.8)}to{opacity:1;transform:scale(1.15)}}
+.letter{background:#fffdf9;border:1px solid #ecd8cd;padding:clamp(22px,5vw,58px);box-shadow:0 16px 45px rgba(139,69,85,.10);border-radius:24px}
+.letter p{margin:0 0 18px}
+.divider{text-align:center;color:#bb7186;letter-spacing:10px;margin:18px 0 20px}
+.closing{text-align:center;color:#934b61;font-size:21px}
+.footer{text-align:center;color:#9a6f7b;padding-top:12px}
+.music-panel{position:fixed;bottom:16px;right:16px;z-index:20;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:min(92vw,360px)}
+.music-panel button{border:none}
+.audio-chip{background:rgba(255,255,255,.92);padding:10px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.1);font:600 13px system-ui;color:#7a4554}
+@media (max-width:980px){
+  .memory-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .calendar-wrap{grid-template-columns:1fr;}
+}
+@media (max-width:640px){
+  .memory-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .heart,.day.special,.day.special::before,.day.special::after,.calendar-card,.day .sparkle{animation:none !important}
+}
+</style>
+<style>
+:root{--gold:#d6b17e;--wine:#562a3d}body{background:#fffaf3;color:#543a40}.hero{background:radial-gradient(ellipse at 50% 25%,#925568,#321625 78%);min-height:100svh;padding:35px 18px}.hero-inner{padding:52px 24px;border:1px solid #d6b17e88;outline:1px solid #d6b17e33;outline-offset:8px;width:min(850px,91vw);border-radius:180px 180px 14px 14px}.hero h1{font-size:clamp(36px,8vw,86px);color:#fff3df;letter-spacing:-2px}.hero .number{font-size:clamp(76px,15vw,140px);color:#e8c590;text-shadow:0 0 40px #f4c17c55}.hero .small{color:#f1d8b4;letter-spacing:3px}.hero .btn{background:linear-gradient(120deg,#fbe4b7,#cfa36a);color:#4c2637}.hero-inner:before{content:'✧   ♡   ✧';color:#e8c590;font-size:24px;display:block;margin-bottom:24px}.heart{color:#f8d7aa}.memory-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding:12px 4px 24px;scrollbar-width:thin;scrollbar-color:#d6b17e transparent}.memory-card{flex:0 0 min(78vw,320px);margin:0;scroll-snap-align:center;border:1px solid #dfc7a7;background:#fffdf8;border-radius:8px;padding:10px;box-shadow:0 8px 22px #543a401c;transition:transform .5s,opacity .5s}.memory-card img{aspect-ratio:3/4;object-fit:contain;background:#f3e8dc;border-radius:3px}.memory-card figcaption{font:italic 23px Georgia;color:#85445c;padding:16px 4px}.gallery-nav{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px}.gallery-nav button{background:#fffaf0;border:1px solid #d6b17e;color:#562a3d}.gallery-count{font:13px system-ui;color:#805b63}.calendar-card{animation:cardBob 4s ease-in-out infinite}.day.special{border:2px solid #c84f75;border-radius:50%;z-index:2}.day.special::before{inset:-5px}.day.special::after{inset:-9px}.letter{border:1px solid #d6b17e80;background:#fffdf8;border-radius:6px;box-shadow:0 15px 50px #543a4010}.letter h2{color:#783d50}.music-panel .audio-chip{display:none}.music-panel button{background:#562a3d;color:#fff3df;border:1px solid #d6b17e}.footer{padding-bottom:45px}.section{margin-bottom:65px}@media(max-width:500px){.hero-inner{padding:40px 14px}.calendar-wrap{padding:12px}.cal-grid{padding:14px 9px}.dow,.days{gap:4px}.day{font-size:14px}.letter{padding:24px 19px}}@media(prefers-reduced-motion:reduce){.memory-card{transition:none}.calendar-card{animation:none}}
+</style></head>
+<body>
+<section class="hero" id="home">
+<div id="hearts"></div>
+<div class="hero-inner">
+<div class="small">26 November 2026 · A birthday love letter</div>
+<div class="number">26</div>
+<h1>Jody ♥ Nurul</h1>
+<div class="small">Happy birthday, my love</div>
+<p>Di antara begitu banyak hal indah di dunia ini, bertemu denganmu adalah salah satu yang paling aku syukuri.</p>
+<button class="btn primary" id="open">Buka surat cintaku ♡</button>
+<div style="font-size:12px;opacity:.82;margin-top:10px">Sentuh untuk membaca, melihat perjalanan kenangan kita, dan memutar lagu ulang tahun</div>
+</div>
+</section>
+<main id="content"><section class="section">
+<div class="calendar-wrap">
+<div aria-label="Kalender November 2026" class="calendar-card">
+<div class="cal-head">
+<div class="month">NOVEMBER</div>
+<div class="year">2026</div>
+</div>
+<div class="cal-grid">
+<div class="dow">
+<div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+</div>
+<div class="days">
+<div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
+<div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div>
+<div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div>
+<div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div>
+<div aria-label="Tanggal spesial 26 November 2026" class="day special">26
+              <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">♡</span>
+</div>
+<div class="day">27</div><div class="day">28</div>
+<div class="day">29</div><div class="day">30</div><div class="day blank"></div><div class="day blank"></div><div class="day blank"></div><div class="day blank"></div><div class="day blank"></div>
+</div>
+</div>
+</div>
+<div class="calendar-note">
+<div class="small" style="color:#b77287">A date to remember</div>
+<h2 style="text-align:left;margin-top:8px">26 November 2026</h2>
+<p>Tanggal ini kuberi lingkaran bukan hanya di kalender, tetapi juga di hati. Hari ketika perempuan yang paling kusayang bertambah usia, bertambah doa, dan bertambah alasan untuk terus membuatku bersyukur.</p>
+<p>Semoga setiap kali kamu melihat angka <strong>26</strong>, kamu ingat bahwa ada seseorang yang selalu mendoakan kebahagiaanmu dengan sungguh-sungguh.</p>
+</div>
+</div>
+</section>
+<section class="section center">
+<div class="small">Our story · 2020 — 2026</div>
+<h2>Perjalanan kenangan kita 2020 — 2026</h2>
+<p class="lead">Tujuh tahun, tujuh potongan kenangan. Setiap tahun punya cerita, dan setiap cerita selalu punya kamu di dalamnya.</p>
+<div class="memory-grid">
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2020 bersama Nurul" src="assets/moment-2020.jpg"/>
+<figcaption>Moment 2020</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2021 bersama Nurul" src="assets/moment-2021.jpg"/>
+<figcaption>Moment 2021</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2022 bersama Nurul" src="assets/moment-2022.jpg"/>
+<figcaption>Moment 2022</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2023 bersama Nurul" src="assets/moment-2023.jpg"/>
+<figcaption>Moment 2023</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2024 bersama Nurul" src="assets/moment-2024.jpg"/>
+<figcaption>Moment 2024</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2025 bersama Nurul" src="assets/moment-2025.jpg"/>
+<figcaption>Moment 2025</figcaption>
+</figure>
+<figure class="memory-card">
+<img alt="Foto kenangan tahun 2026 bersama Nurul" src="assets/moment-2026.jpg"/>
+<figcaption>Moment 2026</figcaption>
+</figure>
+</div><div class="gallery-nav"><button aria-label="Foto sebelumnya" id="prev">‹</button><span class="gallery-count" id="count">Moment 2020 · 1/7</span><button aria-label="Foto berikutnya" id="next">›</button></div>
+</section>
+
+<section class="section">
+<article class="letter">
+<div class="small" style="text-align:center">A little piece of my heart</div>
+<h2 style="text-align:center">Selamat ulang tahun yang ke-26, Nurul, cintaku. ❤️</h2>
+<div class="divider">♡ ♡ ♡</div>
+<p>Hari ini adalah hari yang istimewa, bukan hanya karena bertambahnya usiamu, tetapi karena 26 tahun yang lalu, Tuhan menghadirkan seseorang yang kini menjadi salah satu alasan terbesar di balik kebahagiaanku.</p>
+<p>Di usiamu yang baru ini, aku berdoa semoga Allah selalu menjaga setiap langkahmu, memberikan kesehatan, melapangkan rezekimu, memudahkan segala urusanmu, serta mengabulkan satu per satu impian yang selama ini kamu perjuangkan dan impian kita rumah bertingkat tingkat, mobil lebih dari satu, punya kosan dan kontrakan atau perusahaan sendiri. Semoga segala lelahmu berakhir dengan kebahagiaan, segala kesedihanmu digantikan dengan senyuman, dan setiap doa yang kamu bisikkan dalam sujud menemukan jalan terbaik untuk menjadi kenyataan.</p>
+<p>Sayang, terima kasih telah hadir dalam hidupku. Terima kasih telah menjadi tempatku bercerita, tempatku berbagi kebahagiaan, dan tempat hatiku ingin pulang setelah menghadapi kerasnya dunia.</p>
+<p>Maaf jika selama ini masih banyak kekuranganku dalam mencintaimu. Maaf jika kesibukanku terkadang membuatmu merasa sendiri, jika perkataanku pernah melukai hatimu, atau jika aku belum mampu menjadi laki-laki yang sepenuhnya kamu harapkan. Namun, percayalah, aku selalu ingin belajar menjadi lebih baik untukmu dan untuk masa depan kita.</p>
+<p>Jika hari ini aku diperbolehkan meminta satu hal kepada Tuhan, aku tidak meminta kehidupan yang sempurna. Aku hanya ingin diberikan kesempatan untuk menjalani kehidupan yang tidak sempurna itu bersamamu.</p>
+<p>Aku ingin menemanimu meraih impian, menggenggam tanganmu ketika dunia terasa berat, merayakan setiap keberhasilanmu, dan memelukmu ketika segala sesuatu tidak berjalan sesuai harapan.</p>
+<p>Aku ingin suatu hari nanti, jarak tidak lagi menjadi alasan kita menahan rindu, dan pulang bukan lagi sekadar tentang sebuah tempat, melainkan tentang kita yang tinggal di bawah atap yang sama.</p>
+<p>Aku berharap ulang tahunmu yang ke-26 ini bukan hanya menjadi awal dari bertambahnya usia, tetapi juga awal dari semakin dekatnya kita dengan masa depan yang selalu kita doakan.</p>
+<p>Semoga segala doa, kesabaran, dan perjalanan yang kita lalui hari ini menjadi jalan menuju kebahagiaan yang Allah persiapkan untuk kita. Aku nggk tahu gimana Allah akan menuliskan kisah kita selanjutnya, tetapi dalam setiap doa tentang masa depan, selalu ada harapan agar kamulah yang menjadi teman seperjalananku hingga akhir usia.</p>
+<p><strong>Sekali lagi, selamat bertambah usia, perempuan kesayanganku.</strong></p>
+<p>Tumbuhlah dengan bahagia, bermimpilah setinggi mungkin, dan jangan pernah takut menghadapi masa depan — hajar aja orang yang menghalangimu itu wkowkowwok. Semoga semua impianmu tercapai, baik di atas tanah maupun di dalam air.</p>
+<p>Aku mencintaimu, bukan hanya karena siapa dirimu hari ini, tetapi juga karena siapa pun dirimu kelak.</p>
+<p class="closing"><strong>Happy 26th birthday, my love, my home.</strong></p>
+<p>Terima kasih telah menemani hidupku. Semoga kelak, kita tidak hanya menjadi dua orang yang saling mencintai, tetapi juga dua hati yang Allah persatukan hingga ke surga.</p>
+<p class="closing"><strong>I love you, Nurul. Hari ini, esok, dan sepanjang usia yang Allah izinkan untuk kita bersama. ❤️</strong></p>
+<div class="divider">♡</div>
+<p style="text-align:right;font-style:italic">Dengan segenap cinta,<br/>Jody</p>
+</article>
+</section>
+<footer class="footer">Made with love, especially for you ♡</footer>
+</main>
+<div class="music-panel">
+<div class="audio-chip">♫ Selamat Ulang Tahun — cover romantis</div>
+<button id="music">♫ Putar musik</button>
+</div>
+<audio id="birthdayAudio" loop="" preload="none" src="assets/birthday.mp3"></audio>
+<script>
+const heartsContainer = document.getElementById('hearts');
+for(let i=0;i<24;i++){
+  const h=document.createElement('span');
+  h.className='heart';
+  h.textContent=i%5===0?'♥':'♡';
+  h.style.left=(i*4.2)+'%';
+  h.style.fontSize=(18+(i%6)*6)+'px';
+  h.style.animationDelay='-'+(i*.8)+'s';
+  h.style.animationDuration=(10+(i%5)*1.7)+'s';
+  heartsContainer.appendChild(h);
+}
+const audio = document.getElementById('birthdayAudio');
+const musicBtn = document.getElementById('music');
+let playing = false;
+function syncButton(){ musicBtn.textContent = playing ? 'Ⅱ Jeda musik' : '♫ Putar musik'; }
+async function toggleMusic(){
+  try {
+    if(!playing) {
+      await audio.play();
+      playing = true;
+    } else {
+      audio.pause();
+      playing = false;
+    }
+    syncButton();
+  } catch(e) {
+    musicBtn.textContent='Musik tidak dapat diputar';
+  }
+}
+audio.addEventListener('ended',()=>{ playing=false; syncButton(); });
+musicBtn.addEventListener('click',toggleMusic);
+document.getElementById('open').addEventListener('click', async ()=>{
+  if(!playing) {
+    try { await audio.play(); playing=true; syncButton(); } catch(e) {}
+  }
+  document.getElementById('content').scrollIntoView({behavior:'smooth'});
+});
+</script>
+<script>const grid=document.querySelector('.memory-grid'), cards=[...grid.children], count=document.getElementById('count');let active=0;function show(i){active=(i+cards.length)%cards.length;grid.scrollTo({left:cards[active].offsetLeft-cards[0].offsetLeft,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});count.textContent=`Moment ${2020+active} · ${active+1}/7`;}document.getElementById('prev').onclick=()=>show(active-1);document.getElementById('next').onclick=()=>show(active+1);grid.addEventListener('scroll',()=>{let pos=grid.scrollLeft;active=cards.reduce((best,c,i)=>Math.abs(c.offsetLeft-cards[0].offsetLeft-pos)<Math.abs(cards[best].offsetLeft-cards[0].offsetLeft-pos)?i:best,0);count.textContent=`Moment ${2020+active} · ${active+1}/7`;},{passive:true});let auto;const start=()=>{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto=setInterval(()=>{if(grid.getBoundingClientRect().top<innerHeight&&grid.getBoundingClientRect().bottom>0)show(active+1)},4500)};start();grid.addEventListener('pointerdown',()=>clearInterval(auto),{once:true});document.querySelector('.gallery-nav').addEventListener('pointerdown',()=>clearInterval(auto),{once:true});</script></body>
+</html>
